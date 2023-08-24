@@ -17,7 +17,8 @@ class Enemy (pygame.sprite.Sprite):
         self.rect  = self.image.get_rect()
         self.rect[0] = random.randint(10,1100)
         self.rect[1] = random.randint(10,30)
-        self.speed = 1/3
+        self.speed = 1 
+        self.speed_y = 1
         self.current_image = 0
 
     def update(self):
@@ -25,3 +26,4 @@ class Enemy (pygame.sprite.Sprite):
         self.image = self.animation[self.current_image]
         self.image = pygame.transform.scale(self.image, (68, 78))
         self.rect[0] += self.speed
+        self.rect[1] += self.speed_y
