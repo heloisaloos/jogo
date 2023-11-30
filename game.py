@@ -87,6 +87,7 @@ class Game():
             if self.player_left: 
                 self.player.rect[0] -= self.player.speed
 
+            self.window.fill("black")
             self.window.blit(self.background,(0,0))
             self.window.blit(self.points_text,(850,10))
             self.window.blit(self.level_text,(650,10))

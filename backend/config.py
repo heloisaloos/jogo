@@ -6,6 +6,8 @@ import os
 app = Flask(__name__)
 
 caminho = os.path.dirname(os.path.abspath(__file__))
+pastapai = os.path.dirname(caminho)
+pastaimagem = os.path.join(pastapai, "img/")
 arquivobd = os.path.join(caminho, 'data.db')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///"+arquivobd
