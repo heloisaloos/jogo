@@ -20,13 +20,10 @@ h1{
 
 body{
     background-color: pink;
-}
-
-form{
     text-align: center;
 }
 
-button{
+button, a{
     margin-top: 10px;
     font-size: 20px;
     background-color: transparent;
@@ -35,13 +32,30 @@ button{
     border-radius: 20px;
     padding: 10px;
 }
-button:hover{
+
+button:hover, a:hover{
     background-color: rgb(255, 209, 217);
     border: 2px solid white;
     transition: 0.5s;
 }
 
-button:active{
+button:active, a:active{
     font-size: 21px;
-    transition: none;
+    transition: 0s;
+}
+
+nav{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+
+a:active{
+    font-size: 17px;
 }
